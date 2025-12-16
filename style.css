@@ -598,6 +598,9 @@ span.number {
 
 
 @media only screen and (max-width:568px) {
+    .main{
+        height:100dvh;
+    }
     .headphone-img img {
         max-width: 500px;
         width: 80%;

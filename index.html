@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main" style="background-color: black;">
+        <div class="hero-nav">
+            <div class="navbar flex">
+                <div class="hamburger">
+                    <button class="showbtn" onclick="menubar()">
+                        <img src="menu.png" alt="">
+                    </button>
+                    <div id="menu" class="mobile-menu" style="display: none;">
+                        <button class="hidebtn" onclick="menuhide()">
+                            <img src="back.png" alt="">
+                            
+                        </button>
+                        <div class="mobile-lists">
+                                <span>Menu</span>
+                                <a href="">Home</a>
+                                <a href="">New Arrivals</a>
+                                <a href="">Best Sellers</a>
+                                <a href="">Offers</a>
+                                <a href="">Contact Us</a>
+                                
+                            </div>
+                            <div class="mobile-vendor">
+                                <span style="margin-top: 20px; font-size: 14px;">Account</span>
+
+                                <button class="vendor-btn">become a vendor</button>
+                            </div>
+                            <div class="mobile-vendor">
+                                <span style="margin-top: 20px; font-size: 14px;">SUPPORT</span>
+                                <a href="">Help Center</a>
+                                <a href="">Warranty</a>
+
+                                
+                            </div>   
+                           
+                    </div>
+                </div>
+                <div class="logo">
+                    <h1>VYBEX</h1>
+                </div>
+                <div class="lists flex">
+                    <a href="" class="active">Home</a>
+                    <a href="">New Arrivals</a>
+                    <a href="">Best Sellers</a>
+                    <a href="">Offers</a>
+                    <a href="">Contact Us </a>
+
+                </div>
+                <div class="signup flex">
+                    <div class="vendor">
+                        <button>Become a Vendor</button>
+
+                    </div>
+                    <a href="">
+                        <img src="shopping-bag (2).png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="user (3).png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="hero" class="hero flex">
+                <div class="price-container flex">
+                    <h1 class="title">Get it Now for ₹ 4999 <span
+                            style="padding-left: 5px;text-decoration: line-through white;font-size: 14px;">6999</span>
+                        <div class="aurora">
+                            <div class="aurora__item"></div>
+                            <div class="aurora__item"></div>
+                            <div class="aurora__item"></div>
+                            <div class="aurora__item"></div>
+                        </div>
+                    </h1>
+                </div>
+                <div class="headphone-img">
+                    <img src="2176A68E-A684-46F6-A173-E6E6B06E5421_1_201_a.jpeg" alt="">
+                </div>
+                <div class="product-des">
+                    <div class="product">
+                        <h1 class="inter">Vybax Pulse Pro</h1>
+                        <h3>Feel the rhythm. Live the pulse</h3>
+
+                        <div class="counting flex">
+                            <div class="sub-count">
+                                <img src="star.png" alt="">
+                                <span class="number" data-val="790"> 000 </span>
+                                <span class="value">Reviews</span>
+
+                            </div>
+                            <div class="sub-count">
+                                <img src="group.png" alt="">
+                                <span class="number" data-val="1020"> 000 </span>
+                                <span class="value">Users</span>
+
+                            </div>
+                            <div class="sub-count">
+                                <img src="feedback.png" alt="">
+                                <span class="number" data-val="4.5"> 0 </span>
+                                <span class="value">Ratings</span>
+
+                            </div>
+                        </div>
+                        <div class="productpoint flex" style="margin-top: 14px;">
+                            <img src="headphone.png" alt="">
+                            <span>Designed for a secure fit during long listening sessions</span>
+                        </div>
+                        <div class="productpoint flex">
+                            <img src="headphone.png" alt="">
+                            <span>Deliver deep bass clear vocals balanced sound output</span>
+                        </div>
+                        <div class="colors flex">
+                            <span>Colors Available : </span>
+                            <div class="color-shape flex">
+                                <div class="shape grey"></div>
+                                <div class="shape black"></div>
+                                <div class="shape blue"></div>
+                                <div class="shape pink"></div>
+                            </div>
+
+                        </div>
+                        <div class="buttons flex">
+                            <button class="primary">
+                                <img src="add-to-cart.png" alt="">
+                                Add To Cart
+                            </button>
+                            <button class="secondary">
+                                View More
+                            </button>
+                        </div>
+                        <div class="emi-option flex">
+                            <img src="discount.png" alt=""><span>EMI starting at <span
+                                    style="color: beige;font-weight: 600;text-decoration: underline;">
+                                    ₹833/month</span></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        const menu = document.getElementById("menu");
+        const hero=document.getElementById("hero");
+        const numbers = document.querySelectorAll(".number");
+        const duration = 1500; // ALL counters finish in 2 seconds
+
+
+        numbers.forEach(num => {
+            const endValue = parseInt(num.dataset.val);
+            let startTime = null;
+
+            function updateCounter(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                num.textContent = Math.floor(progress * endValue);
+                num.textContent = Math.floor(progress * endValue) + "+";
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    num.textContent = endValue; // ensure exact final value
+                }
+            }
+
+            requestAnimationFrame(updateCounter);
+        });
+
+        function menubar() {
+            menu.style.display = "block";
+            hero.style.filter="brightness(50%)"
+        }
+        function menuhide()
+        {
+            menu.style.display="none";
+
+            hero.style.filter="brightness(100%)"
+
+        }
+    </script>
+
+</body>
+
+</html>
